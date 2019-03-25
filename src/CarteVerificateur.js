@@ -34,23 +34,20 @@ class Strategy {
 
 class StrategyVisaCarte extends Strategy{
 
-
     InterfaceCarteVerif (numCarte){
     		
         	var taille = numCarte.length;
     		var deuxL = numCarte.substring(0, 2);
-    	
-    		if (taille == "15" && (deuxL == "14" || deuxL == "15")){
-    		
-    			console.log("Carte visa");
-	
-    		} else {
-    		
-    			console.log("ce n'est pas une carte visa");
+    		if (Number(numCarte)){
+    			if (taille == "15" && (deuxL == "14" || deuxL == "15")){
+    				console.log("Carte Visa");
+    			} else {
+    				console.log("ce n'est pas une carte Visa");
+    				}
+    		}else {
+    			console.log ("Le numero de la carte n'est pas valide");
     		}
-
-    	
-    }
+       }	
 }
 
 
@@ -62,18 +59,16 @@ class StrategyMasterCarte extends Strategy{
     		
         	var taille = numCarte.length;
     		var deuxL = numCarte.substring(0, 2);
-    	
-    		if (taille == "16" && (deuxL == "41" || deuxL == "40")){
-    		
-    			console.log("Carte Master");
-	
-    		} else {
-    		
-    			console.log("ce n'est pas une carte Master");
+    		if (Number(numCarte)){
+    			if (taille == "16" && (deuxL == "41" || deuxL == "40")){
+    				console.log("Carte Master");
+    			} else {
+    				console.log("ce n'est pas une carte Master");
+    				}
+    		}else {
+    			console.log ("Le numero de la carte n'est pas valide");
     		}
-
-    	
-    }
+       }	
 }
 
 // Algorithme de verification de la carte AmericaExpress ( implementation de l'interface)
@@ -85,17 +80,16 @@ class StrategyAmericaExpressCarte extends Strategy{
     		
         	var taille = numCarte.length;
     		var deuxL = numCarte.substring(0, 2);
-    	
-    		if (taille == "17" && (deuxL == "35" || deuxL == "30")){
-    		
-    			console.log("Carte AmericaExpress");
-	
-    		} else {
-    		
-    			console.log("ce n'est pas une carte AmericaExpress");
+    		if (Number(numCarte)){
+    			if (taille == "17" && (deuxL == "35" || deuxL == "30")){
+    				console.log("Carte AmericaExpress");
+    			} else {
+    				console.log("ce n'est pas une carte AmericaExpress");
+    				}
+    		}else {
+    			console.log ("Le numero de la carte n'est pas valide");
     		}
-    	
-    }
+       }	
 }
 
 
@@ -108,7 +102,7 @@ function Client() {
     let MasterTest = new ContextBanque("Master")
     MasterTest.ContextInterface("4011111111111111")
     let AmericaExpressTest = new ContextBanque("AmericaExpress")
-    AmericaExpressTest.ContextInterface("35522121212n21214")
+    AmericaExpressTest.ContextInterface("35522121421221214")
 }
 
 Client()
