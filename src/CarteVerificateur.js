@@ -1,4 +1,3 @@
-'use strict';
 
 //ContextBanque permet de recuperer les valeurs de retour de chaques types de cartes (visa, master, americaexpress)
 
@@ -26,8 +25,6 @@ class ContextBanque {
 // interface de la strategie de verification des cartes (implementer par chaques types de carte)
 
 class Strategy {
-    constructor() {
-    }
 
     InterfaceCarteVerif (numCarte){
     }
@@ -36,10 +33,7 @@ class Strategy {
 // Algorithme de verification de la carte Visa ( implementation de l'interface)
 
 class StrategyVisaCarte extends Strategy{
-    constructor() {
-        super()
 
-    }
 
     InterfaceCarteVerif (numCarte){
     		
@@ -63,10 +57,6 @@ class StrategyVisaCarte extends Strategy{
 // Algorithme de verification de la carte Master ( implementation de l'interface)
 
 class StrategyMasterCarte extends Strategy{
-    constructor() {
-        super()
-
-    }
 
     InterfaceCarteVerif (numCarte){
     		
@@ -89,9 +79,7 @@ class StrategyMasterCarte extends Strategy{
 // Algorithme de verification de la carte AmericaExpress ( implementation de l'interface)
 
 class StrategyAmericaExpressCarte extends Strategy{
-    constructor() {
-        super()
-    }
+
 
     InterfaceCarteVerif (numCarte){
     		
@@ -120,7 +108,7 @@ function Client() {
     let MasterTest = new ContextBanque("Master")
     MasterTest.ContextInterface("4011111111111111")
     let AmericaExpressTest = new ContextBanque("AmericaExpress")
-    AmericaExpressTest.ContextInterface("35522121212121214")
+    AmericaExpressTest.ContextInterface("35522121212n21214")
 }
 
 Client()
