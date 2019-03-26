@@ -1,4 +1,7 @@
+
+
 # Projet_ES6
+
 # Reproduire le modele strategy design pattern en javascript (ES6)
 
 Bref apercu de l'architecture de notre projet 
@@ -98,5 +101,4 @@ il sagit d'une fonction test qui testera si une carte est visa ou pas
   
   # Conclusion
   
-  L'implementation de la strategie design pattern est un succès pour le test des cartes. Seul bemol le typage etant abscent nous allons
-  devoir faire une mis a niveau plutard pour exclure les lettres dans le test.
+  L'implementation de la strategie design pattern est un succès pour le test des cartes. Avec une architecture pareille nous avions pu apporter des modifications a nos objets (exclure des chaines de caractères) facilement. 
