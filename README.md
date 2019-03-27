@@ -160,6 +160,10 @@ il sagit d'une fonction test qui testera si une carte est visa ou pas
         AmericaExpressTest.ContextInterface("35522121212121214")
     }
     
+  # Capture de test de numero de carte de crédit
+  
+  ![alt text](https://github.com/Kabore-Donatien-Gueswende/Projet_ES6/blob/master/img/git.PNG)
+  
   
   # Conclusion
   
