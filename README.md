@@ -148,7 +148,6 @@ Et une methode ContextInterface() fesant la lianson entre la classe interface st
         } 
     }
 
-# Client (Une capture du test est dans le repertoire "img")
 il sagit d'une fonction test qui testera si une carte est visa ou pas 
 
       function Client() {
